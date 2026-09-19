@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Snack Shack school lunch club menu." />
+    <title>The Snack Shack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#menu" aria-label="The Snack Shack menu">Snack Shack <span>✦</span></a>
+      <a class="menu-link" href="#menu">Today’s menu <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Lunch club menu · updated Sep 19</p>
+        <h1 id="page-title">Good snacks.<br /><em>Small prices.</em></h1>
+        <p class="intro">Fresh picks for a happy lunch break. Tap any snack to see what’s inside.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#menu">See today’s snacks <span>↓</span></a>
+        </div>
+        <div class="mini-stats" aria-label="Snack Shack information">
+          <div><span>5</span> snacks today</div>
+          <div><span>$1–3</span> cash only</div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Today’s lineup</p>
+            <h2 id="menu-title">Pick your favorite</h2>
+          </div>
+          <p class="tap-note"><span>●</span> Tap for details</p>
+        </div>
+        <div class="menu-grid">
+          <article class="snack-card lime">
+            <div class="snack-top"><img src="https://images.unsplash.com/photo-1642520075943-b5ca77921357?auto=format&fit=crop&w=700&q=85" alt="A bowl filled with popcorn" /><span class="tag">Salty</span></div>
+            <h3>Popcorn Cup</h3>
+            <p class="price">$1.00</p>
+            <button class="details-button" type="button" aria-expanded="false" aria-controls="popcorn-details">What’s in it? <span>+</span></button>
+            <div class="details" id="popcorn-details" hidden><p><b>Ingredients:</b> popcorn, sunflower oil, sea salt.</p><p><b>Allergens:</b> made where milk is handled.</p></div>
+          </article>
+          <article class="snack-card peach">
+            <div class="snack-top"><img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=700&q=85" alt="Fresh strawberries" /><span class="tag">Fruity</span></div>
+            <h3>Fruit Roll-Up</h3>
+            <p class="price">$1.00</p>
+            <button class="details-button" type="button" aria-expanded="false" aria-controls="fruit-details">What’s in it? <span>+</span></button>
+            <div class="details" id="fruit-details" hidden><p><b>Ingredients:</b> fruit purée, sugar, pectin.</p><p><b>Note:</b> vegan and gluten-free.</p></div>
+          </article>
+          <article class="snack-card blue">
+            <div class="snack-top"><img src="https://nutritioncenter.ctahr.hawaii.edu/wp-content/uploads/2022/06/pretzels-hard-plain-salted.jpg" alt="A pile of salted pretzels" /><span class="tag">Crunchy</span></div>
+            <h3>Pretzel Pack</h3>
+            <p class="price">$1.50</p>
+            <button class="details-button" type="button" aria-expanded="false" aria-controls="pretzel-details">What’s in it? <span>+</span></button>
+            <div class="details" id="pretzel-details" hidden><p><b>Ingredients:</b> wheat flour, salt, yeast.</p><p><b>Allergens:</b> contains wheat.</p></div>
+          </article>
+          <article class="snack-card pink">
+            <div class="snack-top"><img src="https://images.unsplash.com/photo-1613703154938-d02828822dd5?auto=format&fit=crop&w=700&q=85" alt="Chocolate chip cookies" /><span class="tag">Sweet</span></div>
+            <h3>Cookie Duo</h3>
+            <p class="price">$2.00</p>
+            <button class="details-button" type="button" aria-expanded="false" aria-controls="cookie-details">What’s in it? <span>+</span></button>
+            <div class="details" id="cookie-details" hidden><p><b>Ingredients:</b> flour, chocolate chips, butter, eggs.</p><p><b>Allergens:</b> contains wheat, milk &amp; egg.</p></div>
+          </article>
+          <article class="snack-card lavender featured">
+            <div class="snack-top"><img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=700&q=85" alt="Refreshing orange juice in a glass" /><span class="tag">Best combo</span></div>
+            <h3>Juice + Treat</h3>
+            <p class="price">$3.00</p>
+            <button class="details-button" type="button" aria-expanded="false" aria-controls="combo-details">What’s in it? <span>+</span></button>
+            <div class="details" id="combo-details" hidden><p><b>Includes:</b> one juice box and one snack of your choice.</p><p><b>Save:</b> up to 50¢ versus buying separately.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-to" aria-labelledby="how-title">
+        <div class="how-title"><p class="eyebrow">Easy as 1, 2, 3</p><h2 id="how-title">Snack time, sorted.</h2></div>
+        <ol>
+          <li><span>1</span><div><h3>Choose a snack</h3><p>Check the menu and ingredient notes.</p></div></li>
+          <li><span>2</span><div><h3>Bring cash</h3><p>Exact change helps us keep the line moving!</p></div></li>
+          <li><span>3</span><div><h3>Pick it up</h3><p>Find us at the lunch-time pickup spot.</p></div></li>
+        </ol>
+        <button class="location-card" type="button" data-open-modal><span class="pin">⌖</span><span><strong>Find the Snack Shack</strong><small>Open during lunch · Room 104 door</small></span><span class="arrow">→</span></button>
+      </section>
+    </main>
+
+    <footer>Made with good vibes by Mia’s Snack Shack <span>✦</span><br /><small>Snack photos: Unsplash and Hawai‘i Nutrition Center</small></footer>
+
+    <dialog class="pickup-modal" aria-labelledby="modal-title">
+      <button class="close-modal" type="button" aria-label="Close pickup details">×</button>
+      <div class="modal-icon">🧺</div>
+      <p class="eyebrow">Come say hi!</p>
+      <h2 id="modal-title">Pick up at<br />Room 104</h2>
+      <p class="modal-copy">Find our little table right outside the Room 104 door, across from the library.</p>
+      <div class="time-box"><span>◷</span><div><strong>Open during lunch</strong><small>11:45 AM – 12:25 PM, weekdays</small></div></div>
+      <button class="button button-dark modal-done" type="button">Got it, thanks!</button>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
